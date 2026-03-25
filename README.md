@@ -40,7 +40,7 @@ What stood out the most were the following red flags:
  
  ![sus p-197.211.52.78](Screenshot-2026-03-25-005027.png)
 
- ![sus p-20.202.101.171](Screenshot-2026-03-25-005915.png)
+ ![sus p-20.202.101.171](Screenshot2026-03-25005915.png)
  
  ## Mtgaton Process
  Seeng as ths s my personal system on a networ  consdred publc  too to my wndows defnender fre wall and bloced all ths assocated p addr usng ths not lazy step placed below
