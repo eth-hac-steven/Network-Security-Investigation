@@ -38,9 +38,51 @@ What stood out the most were the following red flags:
  that my SOC lv1 frend s enough reason for me to escalate ths tcet to a snr SOC Analyst.   
  
  
- ![sus p-197.211.52.78](Screenshot-2026-03-25-005027.png)
+ ![Susp-197.211.52.78](Screenshot-2026-03-25-005027.png)
 
- ![sus p-20.202.101.171](Screenshot2026-03-25005915.png)
+ ![Susp-20.202.101.171](Screenshot2026-03-25005915.png)
  
- ## Mtgaton Process
- Seeng as ths s my personal system on a networ  consdred publc  too to my wndows defnender fre wall and bloced all ths assocated p addr usng ths not lazy step placed below
+ ## Mitigation Process
+
+Seeing as this is my personal system on a network considered 
+public, I took to my Windows Defender Firewall and blocked 
+all associated IP addresses using the following steps:
+
+### Steps Taken
+
+1. Open **Windows Defender Firewall with Advanced Security**
+2. Navigate to **Outbound Rules** → **New Rule**
+3. Select **Custom** → Next
+4. Program → **All Programs** → Next
+5. Protocol → **Any** → Next
+6. Remote IP Addresses → **Add the following:**
+   - 20.202.101.171
+   - 20.202.101.180
+   - 197.211.52.78
+   - 100.78.65.12
+7. Action → **Block the connection**
+8. Profile → tick **Domain, Private, Public**
+9. Name → `Sus-TURN-Investigation-Block`
+
+### Verification
+
+To verify the block is working, monitor:
+
+Event Viewer → 
+Windows Logs → 
+Security → 
+Filter by Event ID 5157
+
+Event ID 5157 confirms Windows successfully 
+filtered a blocked connection attempt.
+
+## Conclusion
+
+What started as a curious "what if" turned into a 
+legitimate security investigation. Key takeaways:
+
+- STUN/TURN traffic can mask malicious peer connections
+- XOR Peer Address decodes to the real destination IP
+- Plaintext STUN credentials = unencrypted channel = red flag
+- Always correlate suspicious IPs with threat intel (VirusTotal)
+- TCPView limitations — TURN relay hides final destination
