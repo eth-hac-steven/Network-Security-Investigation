@@ -17,7 +17,7 @@ was educational.
 
 ## Initial Capture
 
-![STUN-capture](Screenshot_2026-03-23_170630.png)
+![STUN-capture](Screenshot2026-03-23170630.png)
 
 The above image shows filtered captured traffic. 
 What stood out the most were the following red flags:
