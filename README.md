@@ -4,7 +4,7 @@
 
  # STUN Traffic Investigation
 
-You're probably wondering what led to this investigation — 
+You're probably wondering what led to this investigation 
 honestly it started as a "what if" question in my head, 
 a "just do it" kind of feel. So I did, and the result 
 was educational.
@@ -33,9 +33,9 @@ What stood out the most were the following red flags:
 ![Red-flags-capture](Captured-red-flag.png)
 
 ## Tran of thought 
- After seeng all ths my SOC-sense were tnglng to too that Dest p and pasted t n vrus total and NOT to my - 
- surprse the destnaton p had a 6/94 score on vrus total whle the source had a score of zero as seen below and 
- that my SOC lv1 frend s enough reason for me to escalate ths tcet to a snr SOC Analyst.   
+ After seeng all ths my SOC-sense were tinglng to too that Dest Ip and pasted it in virus total and NOT to my  
+ surprise the destination ip had a 6/94 score on virus total while the source had a score of zero as seen below and 
+ that my lv1 SOC friend is enough reason for me to escalate this ticket to a snr SOC Analyst.   
  
  
  ![Susp-197.211.52.78](Screenshot-2026-03-25-005027.png)
