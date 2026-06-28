@@ -1,6 +1,6 @@
 # Network-Security-Investigation
  
- The rabbt hole  went down runnng wreshar 
+ The rabbit hole i went down running wireshark 
 
  # STUN Traffic Investigation
 
