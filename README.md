@@ -1,11 +1,11 @@
 # Network-Security-Investigation
  
- The rabbit hole i went down running wireshark 
+ The rabbit hole I went down running Wireshark 
 
  # STUN Traffic Investigation
 
-You're probably wondering what led to this investigation 
-honestly it started as a "what if" question in my head, 
+You're probably wondering what led to this investigation. 
+Honestly, it started as a "what if" question in my head, 
 a "just do it" kind of feel. So I did, and the result 
 was educational.
 
@@ -32,17 +32,17 @@ What stood out the most were the following red flags:
 
 ![Red-flags-capture](Captured-red-flag.png)
 
-## Tran of thought 
- After seeng all ths my SOC-sense were tinglng to too that Dest Ip and pasted it in virus total and NOT to my  
- surprise the destination ip had a 6/94 score on virus total while the source had a score of zero as seen below and 
- that my lv1 SOC friend is enough reason for me to escalate this ticket to a snr SOC Analyst.   
- 
- 
- ![Susp-197.211.52.78](Screenshot-2026-03-25-005027.png)
+## Train of Thought 
+ After seeing all this, my SOC-sense were tingling too. I took that destination IP and pasted it into VirusTotal, and NOT to my  
+ surprise the destination IP had a 6/94 score on VirusTotal, while the source had a score of zero as seen below. And 
+ that, my level-1 SOC friend, is enough reason for me to escalate this ticket to a senior SOC Analyst.   
+  
+  
+  ![Susp-197.211.52.78](Screenshot-2026-03-25-005027.png)
 
- ![Susp-20.202.101.171](Screenshot2026-03-25005915.png)
- 
- ## Mitigation Process
+  ![Susp-20.202.101.171](Screenshot2026-03-25005915.png)
+  
+  ## Mitigation Process
 
 Seeing as this is my personal system on a network considered 
 public, I took to my Windows Defender Firewall and blocked 
